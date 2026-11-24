@@ -81,9 +81,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 
 .wordmark {
-  font-size: 22px;
+  white-space: nowrap;
+  font-size: 17px;
   font-weight: 700;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.045em;
 }
 
 .wordmark span, .accent { color: var(--accent); }
@@ -297,16 +298,6 @@ h1 {
   filter: saturate(0.9);
 }
 
-.portrait-index {
-  position: absolute;
-  z-index: 2;
-  right: 15px;
-  bottom: 13px;
-  color: var(--text);
-  font: 10px var(--font-mono);
-  letter-spacing: 0.08em;
-}
-
 .portrait-note {
   position: absolute;
   z-index: 2;
@@ -427,7 +418,7 @@ h2 {
 }
 
 .project-feature .project-art { height: 320px; }
-.art-caption, .art-footer { position: absolute; z-index: 2; color: rgba(248, 246, 232, 0.75); font-size: 9px; }
+.art-caption, .art-footer { position: absolute; z-index: 2; color: rgba(248, 242, 255, 0.76); font-size: 9px; }
 .art-caption { top: 16px; left: 18px; }
 .art-footer { right: 18px; bottom: 16px; }
 .art-footer span { margin: 0 5px; }
