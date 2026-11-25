@@ -420,14 +420,14 @@ h2 {
 .return-mark { color: #f0d7ff; font: 86px var(--font-serif); }
 .return-label { position: absolute; top: 33%; right: 16%; color: #f0d7ff; font: italic 14px/1.45 var(--font-serif); transform: rotate(8deg); }
 
-.art-build { background: radial-gradient(ellipse at 48% 45%, #302855, #151225 76%); }
-.build-grid { position: absolute; inset: 51px 0; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); }
-.build-grid span { border: 1px solid rgba(195, 164, 255, 0.16); }
-.build-title { position: relative; z-index: 1; color: #e9ddff; font: 500 36px/1.05 var(--font-mono); letter-spacing: -0.12em; }
-.build-title span { color: #d58aff; }
-.build-block { position: absolute; z-index: -1; width: 103px; height: 103px; background: #514078; }
-.build-block-one { top: 29%; left: 21%; }
-.build-block-two { right: 18%; bottom: 18%; width: 65px; height: 65px; background: #30254f; }
+.art-softmart { background: radial-gradient(ellipse at 50% 45%, #38285f, #151225 76%); }
+.softmart-preview { position: relative; z-index: 1; width: min(78%, 440px); padding: 21px 24px; border: 1px solid rgba(218, 190, 255, 0.24); border-radius: 12px; background: rgba(15, 12, 31, 0.68); box-shadow: 0 16px 48px rgba(8, 6, 18, 0.3); }
+.softmart-name { margin: 0 0 15px; color: #f0e5ff; font: 500 27px/1 var(--font-mono); letter-spacing: -0.08em; }
+.softmart-name span { color: #d58aff; }
+.softmart-assets { display: grid; grid-template-columns: repeat(2, 1fr); gap: 7px; }
+.softmart-assets span { padding: 8px 10px; border: 1px solid rgba(195, 164, 255, 0.18); border-radius: 5px; color: #d8c9ef; font: 8px var(--font-mono); letter-spacing: 0.04em; }
+.softmart-sectors { margin: 14px 0 0; color: #c8b3e8; font: 8px var(--font-mono); letter-spacing: 0.08em; }
+.softmart-sectors span { margin: 0 5px; color: var(--accent); }
 
 .art-food { background: radial-gradient(ellipse at 50% 46%, #55406c, #21172e 76%); }
 .food-sun { position: absolute; top: 32px; right: 24%; width: 98px; height: 98px; border-radius: 50%; background: #be8dff; box-shadow: 0 0 34px rgba(190, 98, 255, 0.3); }
@@ -446,6 +446,9 @@ h2 {
 .project-description { max-width: 500px; margin: 11px 0 15px; color: var(--muted); font-size: 12px; line-height: 1.75; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 0; padding: 0; list-style: none; }
 .tag-list li { padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; background: rgba(148, 105, 207, 0.07); color: var(--muted); font-size: 9px; }
+.project-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 15px; color: var(--accent); font-size: 11px; font-weight: 600; }
+.project-link span { transition: transform 180ms ease; }
+.project-link:hover span { transform: translate(2px, -2px); }
 
 .toolbox-layout { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 80px; margin-top: 48px; }
 .skill-groups { border-top: 1px solid var(--line); }
